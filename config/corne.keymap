@@ -19,6 +19,18 @@
         };
     };
 
+    behaviors {
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALT_TAB";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <36>;
+            tapping-term-ms = <150>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
